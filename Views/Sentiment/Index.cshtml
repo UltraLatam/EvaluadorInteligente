@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Analizador de Sentimientos";
+}
+
+<h2 class="mb-3">@ViewData["Title"]</h2>
+
+<form method="post" class="mb-4">
+    <div class="input-group">
+        <input name="text" class="form-control"
+               placeholder="Escribe tu opinión…" />
+        <button class="btn btn-primary">Analizar</button>
+    </div>
+    <span class="text-danger">@Html.ValidationSummary()</span>
+</form>
+
+@if (ViewBag.Text != null)
+{
+    <div class="alert alert-info">
+        <strong>Texto:</strong> @ViewBag.Text<br />
+        <strong>Predicción:</strong> @ViewBag.Predicted<br />
+        <strong>Score:</strong> @String.Format("{0:F4}", ViewBag.Score)
+    </div>
+}

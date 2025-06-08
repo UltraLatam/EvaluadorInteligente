@@ -3,12 +3,57 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvaluadorInteligente", "EvaluadorInteligente.csproj", "{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ML", "ML", "{EF63391B-C3E5-250D-9024-053ABA41E467}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SentimentCLI", "SentimentCLI", "{1D8F810E-1AC6-4500-49A6-EB4B3DF80A30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentimentModel", "ML\SentimentCLI\SentimentModel\SentimentModel.csproj", "{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}.Debug|x64.Build.0 = Debug|Any CPU
+		{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}.Debug|x86.Build.0 = Debug|Any CPU
+		{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}.Release|x64.ActiveCfg = Release|Any CPU
+		{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}.Release|x64.Build.0 = Release|Any CPU
+		{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}.Release|x86.ActiveCfg = Release|Any CPU
+		{6F8F1F9C-3F16-0F02-BBCD-57AC63E0C00E}.Release|x86.Build.0 = Release|Any CPU
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}.Debug|x64.Build.0 = Debug|Any CPU
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}.Debug|x86.Build.0 = Debug|Any CPU
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}.Release|x64.ActiveCfg = Release|Any CPU
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}.Release|x64.Build.0 = Release|Any CPU
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}.Release|x86.ActiveCfg = Release|Any CPU
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D8F810E-1AC6-4500-49A6-EB4B3DF80A30} = {EF63391B-C3E5-250D-9024-053ABA41E467}
+		{7CAE132A-D179-40A7-B0BB-0CC585E5B65A} = {1D8F810E-1AC6-4500-49A6-EB4B3DF80A30}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA8606B7-DD9D-44AD-AE72-E402FC4A491C}
 	EndGlobalSection
 EndGlobal

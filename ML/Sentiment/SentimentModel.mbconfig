@@ -1,0 +1,224 @@
+{
+  "Scenario": "Classification",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "C:\\Users\\USUARIO\\EvaluadorInteligente\\Data\\sentiment-data.tsv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Label",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Text",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 1.0,
+        "RuntimeInSeconds": 0.094,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2",
+          "e0": {
+            "InputColumnName": "Text",
+            "OutputColumnName": "Text"
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Text"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e2": {
+            "NumberOfLeaves": 11,
+            "MinimumExampleCountPerLeaf": 3,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 133,
+            "FeatureFraction": 0.9548263809227739,
+            "LearningRate": 0.9999997766729865,
+            "LabelColumnName": "Label",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 1.0,
+        "RuntimeInSeconds": 0.108,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2",
+          "e0": {
+            "InputColumnName": "Text",
+            "OutputColumnName": "Text"
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Text"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e2": {
+            "NumberOfLeaves": 7,
+            "MinimumExampleCountPerLeaf": 2,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 438,
+            "FeatureFraction": 0.854929329832383,
+            "LearningRate": 0.038251900386822184,
+            "LabelColumnName": "Label",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 1.0,
+        "RuntimeInSeconds": 0.136,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2",
+          "e0": {
+            "InputColumnName": "Text",
+            "OutputColumnName": "Text"
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Text"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e2": {
+            "NumberOfLeaves": 16,
+            "MinimumExampleCountPerLeaf": 3,
+            "NumberOfTrees": 14,
+            "MaximumBinCountPerFeature": 40,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.9999997766729865,
+            "LabelColumnName": "Label",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 1.0,
+        "RuntimeInSeconds": 0.09,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2",
+          "e0": {
+            "InputColumnName": "Text",
+            "OutputColumnName": "Text"
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Text"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e2": {
+            "NumberOfLeaves": 30,
+            "MinimumExampleCountPerLeaf": 3,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 103,
+            "FeatureFraction": 0.8463335062688622,
+            "LearningRate": 0.13135640624147674,
+            "LabelColumnName": "Label",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 1.0,
+        "RuntimeInSeconds": 0.108,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2",
+          "e0": {
+            "InputColumnName": "Text",
+            "OutputColumnName": "Text"
+          },
+          "e1": {
+            "InputColumnNames": [
+              "Text"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e2": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 2,
+            "NumberOfTrees": 11,
+            "MaximumBinCountPerFeature": 170,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.9999997766729865,
+            "LabelColumnName": "Label",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "FeaturizeText",
+      "e1": "Concatenate",
+      "e2": "FastTreeBinary",
+      "e3": "LightGbmBinary",
+      "e4": "LbfgsLogisticRegressionBinary",
+      "e5": "SdcaLogisticRegressionBinary",
+      "e6": "FastForestBinary",
+      "e7": "Naive"
+    },
+    "Schema": "e0 * e1 * (e2 + e3 + e4 + e5 + e6 * e7)",
+    "MetricName": "Accuracy",
+    "ModelFilePath": "C:\\Users\\USUARIO\\EvaluadorInteligente\\ML\\SentimentCLI\\SentimentModel\\SentimentModel.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Type": "ClassificationTrainingOption",
+    "TrainingTime": 60,
+    "LabelColumn": "Label",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "FileValidationOption",
+      "FilePath": "C:\\Users\\USUARIO\\EvaluadorInteligente\\Data\\sentiment-valid.tsv"
+    }
+  }
+}

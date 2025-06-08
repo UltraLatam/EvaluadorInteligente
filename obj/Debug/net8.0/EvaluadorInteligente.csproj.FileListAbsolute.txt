@@ -156,3 +156,10 @@ C:\Users\USUARIO\EvaluadorInteligente\obj\Debug\net8.0\refint\EvaluadorInteligen
 C:\Users\USUARIO\EvaluadorInteligente\obj\Debug\net8.0\EvaluadorInteligente.pdb
 C:\Users\USUARIO\EvaluadorInteligente\obj\Debug\net8.0\EvaluadorInteligente.genruntimeconfig.cache
 C:\Users\USUARIO\EvaluadorInteligente\obj\Debug\net8.0\ref\EvaluadorInteligente.dll
+C:\Users\USUARIO\EvaluadorInteligente\bin\Debug\net8.0\SentimentModel.mlnet
+C:\Users\USUARIO\EvaluadorInteligente\bin\Debug\net8.0\Microsoft.ML.FastTree.dll
+C:\Users\USUARIO\EvaluadorInteligente\bin\Debug\net8.0\runtimes\linux-x64\native\libFastTreeNative.so
+C:\Users\USUARIO\EvaluadorInteligente\bin\Debug\net8.0\runtimes\osx-x64\native\libFastTreeNative.dylib
+C:\Users\USUARIO\EvaluadorInteligente\bin\Debug\net8.0\runtimes\win-x64\native\FastTreeNative.dll
+C:\Users\USUARIO\EvaluadorInteligente\bin\Debug\net8.0\runtimes\win-x86\native\FastTreeNative.dll
+C:\Users\USUARIO\EvaluadorInteligente\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
